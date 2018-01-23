@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mc9509dw.dicefinal.firstActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_marginTop="36dp"
+        android:id="@+id/input_names"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/btn_startGame"
+        android:layout_alignEnd="@+id/btn_startGame"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:text="@string/txt_enterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/input_names"
+        android:layout_alignStart="@+id/input_names" />
+
+    <Button
+        android:text="@string/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignBaseline="@+id/input_names"
+        android:layout_alignBottom="@+id/input_names"
+        android:layout_toRightOf="@+id/btn_startGame"
+        android:layout_toEndOf="@+id/btn_startGame" />
+
+    <Button
+        android:text="@string/btn_startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_startGame"
+        android:layout_marginLeft="214dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
